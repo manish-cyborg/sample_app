@@ -41,29 +41,36 @@ ruby '1.9.3'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '3.2.15'
+gem 'pg', '0.15.1'
+gem 'sqlite3'
 
 group :development, :test do
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec', '2.5.0'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
   gem "mocha", :require => false
   gem 'test_after_commit'
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara', '2.1.0'
 end
 gem 'capybara', '2.1.0'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
-#gem 'turbolinks'
-#gem 'jbuilder'
+gem 'turbolinks', '1.1.1'
+gem 'jbuilder', '1.0.2'
 
 # group :doc do
 #   gem 'sdoc', '0.3.20', require: false
 # end
 
 group :production do
-  gem 'pg', '0.15.1'
-  #gem 'rails_12factor', '0.0.2'
+  gem 'rails_12factor', '0.0.2'
 end
