@@ -51,7 +51,7 @@ group :test do
   gem "mocha", :require => false
   gem 'test_after_commit'
 end
-
+gem 'capybara', '2.1.0'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
