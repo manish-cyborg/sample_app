@@ -1,17 +1,29 @@
 SampleApp::Application.routes.draw do
-  #get "static_pages/home"
+  # #get "static_pages/home"
+  get "users/new"
 
-  #get "static_pages/help"
-  # root :to => 'static_pages#home'
-  # match '/help', to: help_path, via: 'get'
-  # match '/about', to: about_path, via: 'get'
-  # match '/contact', to: contact_path, via: 'get'
-  # match '/home', to: home_path, via: 'get'
+  # #get "static_pages/help"
+  root :to => 'static_pages#home'
 
-  root  'static_pages#home'
-  match '/help', to: 'static_pages#help'
-  match '/about', to: 'static_pages#about'
-  match '/contact', to: 'static_pages#contact'
+  match '/home', :to => 'static_pages#home'
+  match '/help', :to => 'static_pages#help'
+  match '/about', :to => 'static_pages#about'
+  match '/contact', :to => 'static_pages#contact'
+  match '/users/new', :to => 'users#new'
+
+
+# get "users/new"
+
+#   root  'static_pages#home'
+  match '/signup',  to: 'users#new'
+#   match '/help',    to: 'static_pages#help'
+#   match '/about',   to: 'static_pages#about'
+#   match '/contact', to: 'static_pages#contact'
+
+
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

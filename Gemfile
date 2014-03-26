@@ -23,7 +23,7 @@
 #gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
@@ -48,9 +48,9 @@ group :development, :test do
   #gem 'sqlite3'
   gem 'rspec-rails'
   gem 'guard-rspec', '2.5.0'
-  gem 'spork-rails'
-  gem 'guard-spork'
-  gem 'childprocess'
+  gem 'spork-rails', '4.0.0'
+  gem 'guard-spork', '1.5.0'
+  gem 'childprocess', '0.3.6'
 end
 
 group :test do
@@ -66,12 +66,8 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
-<<<<<<< HEAD
-=======
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets'
->>>>>>> manish/sample_app
-
 # group :doc do
 #   gem 'sdoc', '0.3.20', require: false
 # end
