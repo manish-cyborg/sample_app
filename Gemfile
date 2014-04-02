@@ -23,7 +23,7 @@
 #gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
- gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'bcrypt-ruby', '~> 3.0.1'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
@@ -68,6 +68,8 @@ gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets'
+gem 'factory_girl'
+gem 'strong_parameters'
 # group :doc do
 #   gem 'sdoc', '0.3.20', require: false
 # end
